@@ -6,7 +6,7 @@ const Joke = ({ userAvatar, userName, text, likes, dislikes }) => {
   const [usersDislikes, setUserDislikes] = useState(dislikes);
 
   return (
-   <div className={ usersDislikes>usersLikes ? "joke--not-so-good" : "joke" } >
+   <div className={ usersDislikes>usersLikes ? "joke joke--not-so-good" : "joke" } >
       <div className="joke__body">
         <div className="joke__user">
           <img className="user-avatar" src={userAvatar} />
